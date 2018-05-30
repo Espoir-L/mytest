@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html mip>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">
+    <title>第90届奥斯卡颁奖典礼回顾</title>
+    <link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css">
+    <link rel="canonical" href="https://www.mipengine.org/story.html">
+    <style mip-custom>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    @keyframes fade-in {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity:1;
+        }
+    }
+    @-webkit-keyframes fade-in {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity:1;
+        }
+    }
+    @keyframes fade-in-out {
+        0%{
+            opacity:0;
+        }
+        90%{
+            opacity:1;
+        }
+        100%{
+            opacity:0;
+        }
+    }
+    @-webkit-keyframes fade-in-out {
+        0%{
+            opacity: 0;
+        }
+        90%{
+            opacity:1;
+        }
+        100%{
+            opacity:0;
+        }
+    }
+    @keyframes scale {
+        0%{
+            opacity: 1;
+            transform: scale(1, 1);
+            -webkit-transform: scale(1, 1);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1.1, 1.1);
+        }
+    }
+    @-webkit-keyframes scale {
+        0%{
+            opacity: 1;
+            transform: scale(1, 1);
+            -webkit-transform: scale(1, 1);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1.1, 1.1);
+        }
+    }
+    .fade-in {
+        transform-origin: 50% 5%;
+        animation: fade-in 1s ease;
+        -webkit-animation: fade-in 1s ease;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .fade-in-scale {
+        display: none;
+        opacity: 0;
+        transform-origin: 50% 5%;
+        animation: scale 1.8s linear;
+        -webkit-animation: scale 1.8s linear;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .page1-wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40px;
+        width: 100%;
+        opacity: 1;
+        animation: fade-in 2s ease;
+        -webkit-animation: fade-in 2s ease;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        opacity: 0;
+        z-index: 101;
+    }
+    mip-story-layer span {
+        display: block;
+    }
+    .cover span {
+        text-align: center;
+    }
+    .page1-wrap > :first-child {
+        font-size: 40px;
+        line-height: 40px;
+        color: #f3d78e;
+        font-weight: bold;
+    }
+    .page1-wrap > :nth-child(2) {
+        font-size: 24px;
+        color: #f3d78e;
+        margin-top: 14px;
+        line-height: 24px;
+    }
+    .page1-wrap > :nth-child(3) {
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+    .page1-wrap > :nth-child(4) {
+        font-size: 24px;
+        color: #fff;
+        margin-top: 32px;
+        line-height: 24px;
+    }
+    .common-wrap1 {
+        padding-top: 40%;
+        z-index: 101;
+    }
+    .top {
+        z-index: 101;
+    }        
+    .mask {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        height: 345px;
+        background: linear-gradient(bottom, rgba(0, 0, 0, 1), transparent);
+        background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), transparent);
+    }
+    .common-wrap1 span {
+        text-align: left;
+    }
+    .line,
+    .common-wrap1 > :first-child,
+    .common-wrap2 > :first-child,
+    .common-wrap3 > :first-child {
+        width: 32px;
+        height: 2px;
+        background: #f3d78e;
+    }
+    .common-wrap1 > :nth-child(2) {
+        color: #f3d78e;
+        margin-top: 14px;
+        font-size: 20px;
+        line-height: 20px;
+        color: #f3d78e;
+    }
+    .common-wrap1 > :nth-child(3) {
+        margin-top: 14px;
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .common-wrap1 > :nth-child(4) {
+        width: 32px;
+        height: 2px;
+        background: #f3d78e;
+        margin-top: 32px;
+    }
+    .common-wrap1 > :nth-child(5) {
+        color: #f3d78e;
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 14px;
+    }
+    .common-wrap1 > :nth-child(6) {
+        color: #fff;
+        margin-top: 10px;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .common-wrap2 {
+        width: 100%;
+        animation: fade-in 2s eas;
+        -webkit-animation: fade-in 2s ease;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        opacity: 0;
+        padding-top: 55%;
+        z-index: 101;
+    }
+    .common-wrap2 span {
+        text-align: left;
+    }
+    .common-wrap2 > :nth-child(2) {
+        line-height: 20px;
+        font-size: 20px;
+        margin-top: 14px;
+        color: #f3d78e;
+    }
+    .common-wrap2 > :nth-child(3) {
+        line-height: 30px;
+        font-size: 30px;
+        margin-top: 14px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .common-wrap2 > :nth-child(4) {
+        line-height: 18px;
+        margin-top: 32px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .common-wrap2 > :nth-child(5) {
+        line-height: 18px;
+        margin-top: 10px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .common-wrap3 {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+        width: 100%;
+        z-index: 101;
+    }
+    .common-wrap3 span {
+        text-align: left;
+    }
+    .common-wrap3 > :first-child {
+        animation: fade-in 3s ease;
+        -webkit-animation: fade-in 3s ease;
+    }
+    .common-wrap3 > :nth-child(2) {
+        margin-top: 14px;
+        font-size: 20px;
+        line-height: 20px;
+        color: #f3d78e;
+        animation: fade-in 3s ease;
+        -webkit-animation: fade-in 3s ease;
+    }
+    .common-wrap3 > :nth-child(3) {
+        margin-top: 49px;
+        animation: fade-in-out 3s ease;
+        -webkit-animation: fade-in-out 3s ease;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .common-wrap3 > :nth-child(4) {
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        animation: fade-in 3s ease 3s;
+        -webkit-animation: fade-in 3s ease 3s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .role > :first-child {
+        font-size: 18px;
+        line-height: 18px;
+        color: #fff;
+        opacity: .4;
+    }
+    .role > :nth-child(2) {
+        margin-top: 10px;
+        margin-bottom: 27px;
+        font-size: 24px;
+        line-height: 24px;
+        color: #fff;
+    }
+    .last-animation {
+        animation: fade-in 2s ease !important;
+        -webkit-animation: fade-in 2s ease !important;
+    }
+    .noBottom {
+        margin-bottom: 0 !important;
+    }
+    .mip-backend {
+        background-size: cover;
+    }
+    mip-story-view {
+        display: none;
+    }
+
+    @media screen and (max-width: 350px) {
+        .page1-wrap {
+            bottom: 30px;
+        }
+        .page1-wrap > :first-child {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .page1-wrap > :nth-child(2) {
+            font-size: 18px;
+            margin-top: 11px;
+            line-height: 18px;
+        }
+        .page1-wrap > :nth-child(3) {
+            margin-top: 24px;
+        }
+        .page1-wrap > :nth-child(4) {
+            font-size: 18px;
+            margin-top: 24px;
+            line-height: 18px;
+        }
+        .mask {
+            height: 260px;
+        }
+        .line,
+        .common-wrap1 > :first-child,
+        .common-wrap2 > :first-child,
+        .common-wrap3 > :first-child {
+            width: 24px;
+            height: 2px;
+        }
+        .common-wrap1 > :nth-child(2) {
+            margin-top: 11px;
+            font-size: 15px;
+            line-height: 15px;
+        }
+        .common-wrap1 > :nth-child(3) {
+            margin-top: 11px;
+            font-size: 23px;
+            line-height: 23px;
+        }
+        .common-wrap1 > :nth-child(4) {
+            width: 24px;
+            height: 2px;
+            margin-top: 24px;
+        }
+        .common-wrap1 > :nth-child(5) {
+            font-size: 15px;
+            line-height: 15px;
+            margin-top: 11px;
+        }
+        .common-wrap1 > :nth-child(6) {
+            margin-top: 8px;
+            font-size: 23px;
+            line-height: 23px;
+        }
+        .common-wrap2 > :nth-child(2) {
+            line-height: 15px;
+            font-size: 15px;
+        }
+        .common-wrap2 > :nth-child(3) {
+            line-height: 23px;
+            font-size: 23px;
+            margin-top: 11px;
+        }
+        .common-wrap2 > :nth-child(4) {
+            line-height: 14px;
+            margin-top: 24px;
+            font-size: 14px;
+        }
+        .common-wrap2 > :nth-child(5) {
+            line-height: 14px;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        .common-wrap3 {
+            left: 30px;
+            bottom: 30px;
+        }
+        .common-wrap3 > :nth-child(2) {
+            margin-top: 11px;
+            font-size: 15px;
+            line-height: 15px;
+        }
+        .common-wrap3 > :nth-child(3) {
+            margin-top: 38px;
+        }
+        .role > :first-child {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .role > :nth-child(2) {
+            margin-top: 8px;
+            margin-bottom: 21px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    .mip-story-system-layer {
+        background: none;
+    }
+    .common-wrap {
+        color: #fff;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .common-wrap-1 {
+        font-size: 20px;
+        color: #fff;
+        margin-top: 20px;
+        line-height: 40px;
+    }
+    .common-wrap-1 > :first-child {
+        width: 32px;
+        height: 2px;
+        background: #c9ab5f;
+        margin-bottom: 10px;
+    }
+    .common-wrap-1 > :nth-child(2) {
+        color: #c9ab5f;
+    }
+    .common-wrap-2 {
+        color: #fff;
+        font-size: 28px;
+    }
+    .common-wrap-2 span {
+        width: 32px;
+        height: 2px;
+        background: #c9ab5f;
+        margin-bottom: 10px;
+    }
+    .common-wrap-2 > :nth-child(3) {
+        margin-top: 80px;
+        line-height: 40px;
+        color: #c9ab5f;
+        font-size: 20px;
+    }
+    .common-wrap-2 > :nth-child(3) > :last-child {
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <mip-story standalone >
+        <script type="application/json">
+        {
+            "share": {
+                "thumbnail": "https://www.mipengine.org/static/img/mip-story/cover.jpg",
+                "background": "https://www.mipengine.org/static/img/mip-story/p8.png",
+                "title": "第90届奥斯卡颁奖典礼回顾",
+                "from": "小故事",
+                "desc": "一分钟带你了解第九十届奥斯卡颁奖典礼",
+                "readings": "10000"
+            }
+        }
+        </script>
+        <mip-story-view>
+            <mip-story-layer template="fill">
+                <mip-img  layout="responsive" width="480" class="fade-in-scale" height="720" src="https://www.mipengine.org/static/img/mip-story/p1.png" layout="responsive"></mip-img>
+            </mip-story-layer>
+            <mip-story-layer class="cover">
+                <div class="page1-wrap">
+                    <span>第90届奥斯卡</span>
+                    <span>The 90th Oscar</span>
+                    <span class="line"></span>
+                    <span>颁奖典礼回顾</span>
+                </div>
+            </mip-story-layer>
+            <mip-story-layer>
+                <div class="mask"></div>
+            </mip-story-layer>
+        </mip-story-view>
+        <mip-story-view>
+            <mip-story-layer template="fill">
+                <mip-img  layout="responsive" width="480" height="720" src="https://www.mipengine.org/static/img/mip-story/p3.gif"></mip-img>
+            </mip-story-layer>
+            <mip-story-layer template="thirds" class="top">
+                <div flex-area="upper-third"></div>
+                <div flex-area="lower-third">
+                    <div class="common-wrap2">
+                    <span></span>
+                    <span animate-in="fade-in" id="second-animation">最佳男主角</span>
+                    <span animate-in="fly-in-left" animate-in-duration=400 animate-in-after="second-animation" id="second-animation-2">加里·奥德曼</span>
+                    <span animate-in="fly-in-left" animate-in-duration=400 animate-in-after="second-animation-2">主演</span>
+                    <span animate-in="fly-in-left" animate-in-duration=400 animate-in-after="second-animation-2">至暗时刻</span>
+                </div>
+                </div>
+            </mip-story-layer>
+            <mip-story-layer>
+                <div class="mask"></div>
+            </mip-story-layer>
+        </mip-story-view>
+        <mip-story-view>
+            <mip-story-layer template="fill">
+                <mip-img  layout="responsive" width="480" height="720" src="https://www.mipengine.org/static/img/mip-story/p4.gif"></mip-img>
+            </mip-story-layer>
+            <mip-story-layer template="thirds" class="top">
+                <div flex-area="upper-third"></div>
+                <div flex-area="lower-third">
+                    <div class="common-wrap2">
+                        <span></span>
+                        <span animate-in="fade-in" id="third-animation">最佳女主角</span>
+                        <span animate-in="fly-in-left" animate-in-duration=400 animate-in-after="third-animation" id="third-animation-2">弗兰西斯·麦克多蒙德</span>
+                        <span animate-in="fly-in-left" animate-in-duration=400 animate-in-after="third-animation-2">主演</span>
+                        <span animate-in="fly-in-left" animate-in-duration=400 animate-in-after="third-animation-2">三块广告牌</span>
+                    </div>
+                </div>
+            </mip-story-layer>
+            <mip-story-layer>
+                <div class="mask"></div>
+            </mip-story-layer>
+        </mip-story-view>
+        <mip-story-view>
+            <mip-story-layer template="vertical">
+                <div class="common-wrap">山姆·洛克威尔</div>
+                <mip-img layout="responsive" width="1242" height="1665" src="./static/p5.png"></mip-img>
+                <div class="common-wrap-1">
+                    <span></span>
+                    <span>最佳男配角</span>
+                    <span>主演：三块广告牌</span>
+                </div>
+            </mip-story-layer>
+        </mip-story-view>
+        <mip-story-view>
+            <mip-story-layer template="fill">
+                <mip-img layout="responsive" width="480" height="720" src="https://www.mipengine.org/static/img/mip-story/p6.png"></mip-img>
+            </mip-story-layer>
+            <mip-story-layer template="thirds" class="common-wrap-2">
+                <div flex-area="upper-third">艾莉森·珍妮</div>
+                <div flex-area="middle-third"></div>
+                <div flex-area="lower-third">
+                    <span></span>
+                    <div>最佳女配角</div>
+                    <div>主演: 我，花样女王</div>
+                </div>
+            </mip-story-layer>
+        </mip-story-view>
+        <mip-story-view>
+            <mip-story-layer template="fill">
+                <mip-img  layout="responsive" width="480" height="720" class="fade-in-scale" src="https://www.mipengine.org/static/img/mip-story/p7.png"></mip-img>
+            </mip-story-layer>
+            <mip-story-layer template="thirds" class="top">
+                <div flex-area="upper-third"></div>
+                <div flex-area="lower-third">
+                    <div class="common-wrap1">
+                        <span></span>
+                        <span animate-in="fade-in" id="sixth-animation">最佳动画短片</span>
+                        <span animate-in="fly-in-left" animate-in-duration=400 animate-in-after="sixth-animation">亲爱的篮球</span>
+                        <span></span>
+                        <span animate-in="fade-in" id="sixth-animation">最佳动画长片</span>
+                        <span animate-in="fly-in-right" animate-in-duration=400 animate-in-after="sixth-animation">寻梦环游记</span>
+                    </div>
+                </div>
+            </mip-story-layer>
+            <mip-story-layer>
+                <div class="mask"></div>
+            </mip-story-layer>
+        </mip-story-view>
+    </mip-story>
+    <mip-stats-baidu>
+        <script type="application/json">
+            {
+                "token": "02890d4a309827eb62bc3335b2b28f7f",
+                "_setAutoPageview": [true]
+            }
+        </script>
+    </mip-stats-baidu>
+    <mip-cambrian site-id="1589820413983913"></mip-cambrian>
+    <script type="application/ld+json">
+        {
+            "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+            "@id": "https://www.mipengine.org/story.html",
+            "appid": "1589820413983913",
+            "title": "第90届奥斯卡颁奖典礼回顾",
+            "images": [
+                "https://www.mipengine.org/static/img/sample_01.jpg"
+                ],
+            "description": "第90届奥斯卡颁奖典礼回顾",
+            "pubDate": "2018-03-9T08:00:01"
+        }
+    </script>
+    <script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+    <script src="https://c.mipcdn.com/static/v1/mip-share/mip-share.js"></script>
+    <script src="http://172.24.143.55:8000/local-extension-debug/mip-story/mip-story.js"></script>
+    <script src="https://c.mipcdn.com/static/v1/mip-stats-baidu/mip-stats-baidu.js"></script>
+    <script src="https://c.mipcdn.com/extensions/platform/v1/mip-cambrian/mip-cambrian.js"></script>
+</body>
+</html>
