@@ -1130,12 +1130,13 @@ define('mip-story/mip-story-slider', [
     var resetSlideEndViewCB;
     var showDampingCB;
     var util = require('util');
-    var EventEmitter = util.EventEmitter;
+    var dm = util.dom;
     var SLIDEMOVING = 'slideMoving';
     var storyInstance;
     var storyInstanceEle;
-    var sliderTime = 140;
-    var reboundTime = 70;
+    var sliderTime = 200;
+    var reboundTime = 80;
+    var recommend;
     var directionMap = {
         back: 'back',
         goto: 'goto'
@@ -1219,6 +1220,7 @@ define('mip-story/mip-story-slider', [
         this.sliderIng();
         // 结束滑动
         this.sliderEnd();
+        recommend = document.querySelector('.recommend');
     };
     // 初始化view的最初排布
     MIPStorySlider.prototype.initViewForSlider = function () {
@@ -1262,6 +1264,10 @@ define('mip-story/mip-story-slider', [
         var self = this;
         // 对story进行手势的监控
         storyInstanceEle.addEventListener('touchmove', function (e) {
+            // 特殊处理，分享页更多小故事滚动，禁止翻页滚动
+            if (dm.contains(recommend, e.target)) {
+                return;
+            }
             // 如果正处于翻页状态跳出
             if (self.moveFlag) {
                 return;
@@ -1273,6 +1279,10 @@ define('mip-story/mip-story-slider', [
         var self = this;
         // 对story进行手势的监控
         storyInstanceEle.addEventListener('touchend', function (e) {
+            // 特殊处理，分享页更多小故事滚动，禁止翻页滚动
+            if (dm.contains(recommend, e.target)) {
+                return;
+            }
             // 如果正处于翻页状态跳出
             if (self.moveFlag) {
                 return;
@@ -1552,7 +1562,7 @@ define('mip-story/mip-story-slider', [
 });
 
 // ======================
-// mip-story/mip-story-clickSwitch.js
+// mip-story/mip-story-clickswitch.js
 // ======================
 
 
@@ -1560,7 +1570,7 @@ define('mip-story/mip-story-slider', [
  * @file mip-story-click 组件
  * @author
  */
-define('mip-story/mip-story-clickSwitch', [
+define('mip-story/mip-story-clickswitch', [
     'require',
     'util'
 ], function (require) {
@@ -1738,7 +1748,7 @@ define('mip-story/mip-story-service', [
     'require',
     'viewport',
     './mip-story-slider',
-    './mip-story-clickSwitch',
+    './mip-story-clickswitch',
     'util'
 ], function (require) {
     'use strict';
@@ -1764,7 +1774,7 @@ define('mip-story/mip-story-service', [
     var switchPageType = SWITCHTYPES.slideX;
     var Slider = require('./mip-story-slider');
     var slider;
-    var ClickSwitch = require('./mip-story-clickSwitch');
+    var ClickSwitch = require('./mip-story-clickswitch');
     var clickSwitch;
     var util = require('util');
     var dm = util.dom;
